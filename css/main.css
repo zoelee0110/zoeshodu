@@ -7,21 +7,21 @@ html {
   font-weight: 400;
 }
 /* 백그라운드 컬러 적용 */
-
 body {
     background-color: rgba(242, 233, 216, 1);
     background-size: auto 90rem;
 }
 
 /* 전체 요소 가운데 정렬 */
-body {
-  margin: auto 16.666vw; /* 상하: auto, 좌우: 16.666vw */
-}
-
+.container {
+    width: 66.666vw;
+    margin: 0 16.666vw;
+/* 메인태그 복잡해서 전체 플랙스 적용 */
 .main {
     display: flex;
     flex-direction: column;
 }
+
 
 .a11y-hidden {
     clip: rect(1px, 1px, 1px, 1px);
@@ -34,6 +34,15 @@ body {
     position: absolute;
     }
 
+/* 헤더 고정 안된다!  */
+.container.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(242, 233, 216, 1);
+}
 
 .header {
     height: 10.2rem;
@@ -41,6 +50,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navs {
@@ -76,12 +86,18 @@ body {
 .main-page {
     display: flex;
     height: 80rem;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
-
+.sec1-left,
+.sec1-right {
+  max-width: 50%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
 .sec1-left h2 {
     margin-top: 20rem;
-    width: 73.7rem;
+    max-width: 100%;
     height: 12rem;
 
     font-size: 4.8rem;
@@ -97,7 +113,7 @@ body {
     line-height: 5rem;
 }
 .sec1-right img {
-    width: 41.5rem;
+    max-width: 100%;
     height: 76.6rem;
     object-fit: cover;
     object-position: top;
@@ -108,6 +124,7 @@ body {
     margin-top: 8rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .hodu-main-img img {
     width: 66rem;
@@ -175,7 +192,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .learn-desc {
@@ -279,7 +296,7 @@ body {
 .up-to-pages:hover {
     color: rgba(118, 118, 118, 1);
 }
-
+/* footer */
 .footer {
     height: 16rem;
     display: flex;
@@ -310,4 +327,3 @@ body {
     align-items: center;
     
 }
-
