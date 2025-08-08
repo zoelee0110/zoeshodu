@@ -7,12 +7,6 @@ html {
   font-weight: 400;
 }
 /* 백그라운드 컬러 적용 */
-header {
-    background: rgba(242, 233, 216, 1);
-}
-.main .main-page {
-    background: rgba(242, 233, 216, 1);  
-}
 
 body {
     background-color: rgba(242, 233, 216, 1);
@@ -20,7 +14,7 @@ body {
 }
 
 /* 전체 요소 가운데 정렬 */
-.header, .main, .footer {
+body {
   margin: auto 16.666vw; /* 상하: auto, 좌우: 16.666vw */
 }
 
@@ -30,35 +24,32 @@ body {
 }
 
 .a11y-hidden {
-      clip: rect(1px, 1px, 1px, 1px);
-      clip-path: inset(50%);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
     }
 
 
 .header {
+    height: 10.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.sec1-right img {
-    width: 13rem;
-    height: 4rem;
-    padding-top: 3.1rem;
-}
 .navs {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .nav-normal {
-    margin-top: 4.1rem;
     margin-right: 4rem; 
     display: flex;
     flex-direction: row;
@@ -69,7 +60,6 @@ body {
     margin: 0 3rem;
 }
 .download {
-    margin-top: 2.6rem;
     background-color: rgba(217,118,82,1);
     width: 14rem;
     height: 5rem;
@@ -81,9 +71,12 @@ body {
     text-align: center;
 }
 
+/* main시작 */
+/* 섹션1 메인페이지 */
 .main-page {
     display: flex;
     height: 80rem;
+    justify-content: center;
 }
 
 .sec1-left h2 {
