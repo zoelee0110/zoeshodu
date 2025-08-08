@@ -5,91 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HODU랜딩페이지</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
     <header>
+
+    <div class="header">
         <h1 class="a11y-hidden">HODU</h1>
         <div><img src="./images/logo.svg" alt="호두"></div>
-        <nav>
-            <ul class="nav normal">
+        <nav class="navs">
+            <ul class="nav-normal">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li class="normal"><a href="#">About</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
-            <ul class="download"><li><button type="button">Download</button>/li></ul>
+            <button type="button" class="download">Download</button>
         </nav>
+    </div>
+
     </header>
     <main>
-        <section class="main-page">
-            <div class="sec1-left">
-                <h2>Lorem Ipsum is simply</br>dummy text of the printing and</h2>
-                <div>
-                    Lorem Ipsum is simply dummy text of the printing and</br>
-                    typesetting industry. </br>
-                    Lorem Ipsum has been the industry's standard dummy text</br>
-                    ever since the 1500s, when an unknown</br>
+        <div class="main">
+            <section class="main-page">
+                <div class="sec1-left">
+                    <h2>Lorem Ipsum is simply</br>dummy text of the printing and</h2>
+                    <div>
+                        Lorem Ipsum is simply dummy text of the printing and</br>
+                        typesetting industry. </br>
+                        Lorem Ipsum has been the industry's standard dummy text</br>
+                        ever since the 1500s, when an unknown</br>
+                    </div>
+                    <div class="download"><button type="button">Download</button></div>
                 </div>
-                <div class="download"><button type="button">Download</button></div>
-            </div>
-            <div class="sec1-right">
-                <img src="./images/box-cat.png" alt="박스를 쓴 고양이 호두">
-            </div>
-        </section>
-        <section class="img-page">
-            <div class="hodu-main-img">
-                <img src="./images/img_4.jpg" alt="누워있는 고양이 호두">
-            </div>
-            <div class="hodu-desc">
-                <h3 class="img-head">Lorem Ipsum is simply
-                dummy text of the printing and dummy text</h3>
-                <p class="img-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
-        </section>
-        <section class="img-ul-page">
-            <div class="ul-text1">
-                <h3 class="ul-head">dummy text of the printing and dummy</h3>
-                <p class="ul-desc">Lorem Ipsum is simply <span class="coloring">dummy text</span> of the printing and typesetting industry. </br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-            </div>
-            <div class="ul-img">
-                <ul class="imgs-3">
-                    <li><img src="./images/img_1.jpg" alt="캣타워 위의 고양이 호두"></li>
-                    <li><img src="./images/img_2.jpg" alt="고양이 호두의 뒷모습"></li>
-                    <li><img src="./images/img_3.jpg" alt="고양이 호두의 정면 모습"></li>
-                </ul>
-            </div>
-            <div class="ul-text2">
-                <div class="learn-desc">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</br>
-                    Ipsum is simply dummy text of the printing and typesetting industry. 
+                <div class="sec1-right">
+                    <img src="./images/box-cat.png" alt="박스를 쓴 고양이 호두">
                 </div>
-                <div class="button">
-                    <button type="button">Learn More</button>
+            </section>
+            <section class="img-page">
+                <div class="hodu-main-img">
+                    <img src="./images/img_4.jpg" alt="누워있는 고양이 호두">
                 </div>
+                <div class="hodu-desc">
+                    <h3 class="img-head">Lorem Ipsum is simply
+                    dummy text of the printing and dummy text</h3>
+                    <p class="img-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+            </section>
+            <section class="img-ul-page">
+                <div class="ul-text1">
+                    <h3 class="ul-head">dummy text of the printing and dummy</h3>
+                    <p class="ul-desc">Lorem Ipsum is simply <span class="coloring">dummy text</span> of the printing and typesetting industry. </br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                </div>
+                <div class="ul-img">
+                    <ul class="imgs-3">
+                        <li><img src="./images/img_1.jpg" alt="캣타워 위의 고양이 호두"></li>
+                        <li><img src="./images/img_2.jpg" alt="고양이 호두의 뒷모습"></li>
+                        <li><img src="./images/img_3.jpg" alt="고양이 호두의 정면 모습"></li>
+                    </ul>
+                </div>
+                <div class="ul-text2">
+                    <div class="learn-desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</br>
+                        Ipsum is simply dummy text of the printing and typesetting industry. 
+                    </div>
+                    <div class="button">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="sub-text">
+                    <h3 class="sub-head">Subscribe to our Blog post</h3>
+                    <div class="sub-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
+                    Lorem Ipsum has been the industry's standard dummy text </div>
+                </div>
+                <form class="sub-form">
+                    <label for="sub-blank">
+                        <img src="./images/mail.svg" alt="이메일 로고">
+                        <input id="subscribe" type="email" placeholder="Enter your e-mail address">
+                    </label>
+                    <button id="subscribe" type="submit">Subscribe</button>
+                </form>
+            </section>
+            <div class="up-to-pages">
+                <img src="./images/top-btn.svg" alt="최상단 페이지로">
             </div>
-        </section>
-        <section class="subscribe">
-            <div class="sub-text">
-                <h3 class="subscribe">Subscribe to our Blog post</h3>
-                <div class="sub-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
-                Lorem Ipsum has been the industry's standard dummy text </div>
-            </div>
-            <form class="sub-form">
-                <label for="subscribe">
-                    <img src="./images/mail.svg" alt="이메일 로고">
-                    <input id="subscribe" type="email" placeholder="Enter your e-mail address">
-                </label>
-                <button id="subscribe" type="submit">Subscribe</button>
-            </form>
-        </section>
-        <div class="up-to-pages">
-            <img src="./images/top-btn.svg" alt="최상단 페이지로">
         </div>
     </main>
     <footer>
+
+    <div class="footer">
         <div class="footer-logo">
             <img src="./images/logo.svg" alt="호두로고">
         </div>
@@ -101,6 +108,8 @@
                 <li><img src="./images/youtube.svg" alt="유투브"></li>
             </ul>
         </div>
+    </div>
+
     </footer>
   </body>
 </html>

@@ -1,0 +1,320 @@
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+html {
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+/* 백그라운드 컬러 적용 */
+header {
+    background: rgba(242, 233, 216, 1);
+}
+.main .main-page {
+    background: rgba(242, 233, 216, 1);  
+}
+
+body {
+    background-color: rgba(242, 233, 216, 1);
+    background-size: auto 90rem;
+}
+
+/* 전체 요소 가운데 정렬 */
+.header, .main, .footer {
+  margin: auto 16.666vw; /* 상하: auto, 좌우: 16.666vw */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.a11y-hidden {
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+    }
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sec1-right img {
+    width: 13rem;
+    height: 4rem;
+    padding-top: 3.1rem;
+}
+.navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-normal {
+    margin-top: 4.1rem;
+    margin-right: 4rem; 
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.6rem;
+}
+.normal {
+    margin: 0 3rem;
+}
+.download {
+    margin-top: 2.6rem;
+    background-color: rgba(217,118,82,1);
+    width: 14rem;
+    height: 5rem;
+    border-radius: 4rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(255,255,255,1);
+    text-align: center;
+}
+
+.main-page {
+    display: flex;
+    height: 80rem;
+}
+
+.sec1-left h2 {
+    margin-top: 20rem;
+    width: 73.7rem;
+    height: 12rem;
+
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+.sec1-left div {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
+.sec1-left button {
+    text-align: center;
+    line-height: 5rem;
+}
+.sec1-right img {
+    width: 41.5rem;
+    height: 76.6rem;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 3.2rem;
+}
+
+.img-page {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+}
+.hodu-main-img img {
+    width: 66rem;
+    height: 39rem;
+    border-radius: 3rem;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+
+    object-fit: cover;
+    object-position: center;
+}
+.hodu-desc {
+    padding-left: 11rem;
+}
+.img-head {
+    width: 51rem;
+    height: 13.5rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.img-desc {
+    padding-top: 4rem;
+    font-size: 1.6rem;
+}
+
+.img-ul-page {
+    margin-top: 12rem;
+}
+.ul-text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.ul-head {
+    color: rgba(217, 118, 82, 1);
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.ul-desc {
+    text-align: center;
+    font-size: 1.6rem;
+    .coloring {
+        color: rgba(217, 118, 82, 1);
+        font-weight: 700;
+    }
+}
+.ul-img {
+    margin-top: 8.8rem;
+}
+.imgs-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7.2rem;
+}
+.imgs-3 img {
+    width: 37.8rem;
+    height: 37.8rem;
+    border-radius: 3rem;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.ul-text2 {
+    margin-top: 9rem;
+    width: 93.8rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.learn-desc {
+    margin-left: 17.2rem;
+    font-size: 1.6rem;
+}
+.ul-text2 .button {
+    width: 14.7rem;
+    height: 5rem;
+    border-radius: 4rem;
+    background-color: rgba(217, 118, 82, 1);
+
+    font-size: 1.6rem;
+    color: rgba(255,255,255,1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe {
+    margin-top: 9rem;
+    background-color:rgba(38, 49, 64, 1);
+    width: 100%;
+    height: 20rem;
+    border-radius: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-text {
+    margin-left: 5.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-head {
+    color: rgba(255,255,255,1);
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.sub-desc {
+    margin-top: 1.8rem;
+    color: rgba(242, 233, 216, 1);
+    font-size: 1.4rem;
+}
+.sub-form {
+    margin-right: 5.8rem;
+    width: 53rem;
+    height: 6rem;
+    background-color: rgba(255,255,255,1);
+    border-radius: 6rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-form label {
+    margin-left: 1.8rem;
+
+}
+.sub-blank img {
+    display: inline-block;
+    align-items: center;
+}
+.sub-form button {
+    width: 13.6rem;
+    height: 5rem;
+    border-radius: 4rem;
+    background-color: rgba(217, 118, 82, 1);
+    margin-right: 0.5rem;
+
+    color: rgba(255,255,255,1);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+}
+#subscribe::placeholder {
+    margin-left: 1.6rem;
+    color: rgba(118, 118, 118, 1);
+    font-size: 1.6rem;
+}
+.up-to-pages {
+    position: relative;
+    margin-right: 2.4rem;
+    
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(255,255,255,1);
+    color: rgba(196, 196, 196, 1);
+    border-radius: 100%;
+    img {
+        display: inline-block;
+        position: relative;
+    }
+    }
+.up-to-pages:hover {
+    color: rgba(118, 118, 118, 1);
+}
+
+.footer {
+    height: 16rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo img {
+    width: 22.6rem;
+    height: 7rem;
+}
+.sns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.sns li {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: rgba(242, 157, 82, 1);
+    border-radius: 100%;
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
