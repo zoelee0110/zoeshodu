@@ -120,6 +120,7 @@ body::before {
     text-align: center;
     line-height: 5rem;
 }
+/* fb: 가독성을 위한 이미지 크기 %로 변경 */
 .sec1-right img {
     max-width: 100%;
     height: auto;
@@ -127,15 +128,20 @@ body::before {
     object-position: top;
     margin-top: 3.2rem;
 }
-
+/* sec2 이미지-텍스트 배열 */
 .img-page {
     margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.hodu-main-img {
+    width: 66rem;
+    height: 39rem;
+}
 .hodu-main-img img {
     width: 66rem;
+    height: 39rem;
     height: 39rem;
     border-radius: 3rem;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
@@ -156,7 +162,7 @@ body::before {
     padding-top: 4rem;
     font-size: 1.6rem;
 }
-
+/* sec3 이미지 3개 배열 */
 .img-ul-page {
     margin-top: 12rem;
 }
@@ -174,11 +180,11 @@ body::before {
 .ul-desc {
     text-align: center;
     font-size: 1.6rem;
-    .coloring {
+}
+.ul-desc .coloring {
         color: rgba(217, 118, 82, 1);
         font-weight: 700;
     }
-}
 .ul-img {
     margin-top: 8.8rem;
 }
@@ -221,7 +227,7 @@ body::before {
     align-items: center;
     text-align: center;
 }
-
+/* sec4 구독 */
 .subscribe {
     margin-top: 9rem;
     background-color:rgba(38, 49, 64, 1);
@@ -293,6 +299,7 @@ body::before {
     color: rgba(118, 118, 118, 1);
     font-size: 1.6rem;
 }
+/* 위로가기 버튼 */
 .up-to-pages {
     display: flex;
     justify-content: center;
@@ -332,12 +339,12 @@ body::before {
     height: 4.2rem;
     background-color: rgba(242, 157, 82, 1);
     border-radius: 100%;
-    img {
-        object-fit: cover;
-        object-position: center;
-    }
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-}
+.sns li img {
+        object-fit: cover;
+        object-position: center;
+    }
