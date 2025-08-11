@@ -403,3 +403,10 @@ body::before {
         object-fit: cover;
         object-position: center;
     }
+
+/* !!!!왁자지껄!!! !!!!이목집중!!!! 여기가!!! */
+/* 모바일 반응형 시작부분 */
+@media screen and (max-width: 390px) {
+    
+    
+}
