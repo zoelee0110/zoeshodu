@@ -7,21 +7,27 @@ html {
   font-weight: 400;
 }
 /* 백그라운드 컬러 적용 */
-body {
-    background-color: rgba(242, 233, 216, 1);
-    background-size: auto 90rem;
+body { position: relative; }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90rem;
+    background: rgba(242,233,216,1);
+    z-index: -100;
 }
-
 /* 전체 요소 가운데 정렬 */
-.container {
+.header, .main, .footer {
     width: 66.666vw;
     margin: 0 16.666vw;
-/* 메인태그 복잡해서 전체 플랙스 적용 */
+}
+/* 메인태그 복잡해서 전체 플랙스 적용  */
 .main {
     display: flex;
     flex-direction: column;
 }
-
 
 .a11y-hidden {
     clip: rect(1px, 1px, 1px, 1px);
@@ -34,7 +40,7 @@ body {
     position: absolute;
     }
 
-/* 헤더 고정 안된다!  */
+/* 헤더 고정  */
 .container.fixed {
     position: fixed;
     top: 0;
@@ -88,12 +94,14 @@ body {
     height: 80rem;
     justify-content: space-between;
     gap: 2rem;
+    margin-top: 10.2rem;
+    /* 마진은 고정된 헤더만큼 아래로 내려준것 */
 }
 .sec1-left,
 .sec1-right {
-  max-width: 50%;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
+    max-width: 50%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 .sec1-left h2 {
     margin-top: 20rem;
@@ -114,7 +122,7 @@ body {
 }
 .sec1-right img {
     max-width: 100%;
-    height: 76.6rem;
+    height: auto;
     object-fit: cover;
     object-position: top;
     margin-top: 3.2rem;
@@ -254,13 +262,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.sub-form label {
-    margin-left: 1.8rem;
-
-}
-.sub-blank img {
+.sub-form img {
     display: inline-block;
     align-items: center;
+    vertical-align: middle;
+    margin-left: 2.8rem;
 }
 .sub-form button {
     width: 13.6rem;
@@ -273,25 +279,33 @@ body {
     font-weight: 700;
     font-size: 1.6rem;
     text-align: center;
+    
 }
-#subscribe::placeholder {
-    margin-left: 1.6rem;
+.sub-form input {
+    margin-left: 1.8rem;
+    font-size: 1.6rem;
+    border: none;
+    vertical-align: middle;
+    
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+.sub-form input::placeholder {
     color: rgba(118, 118, 118, 1);
     font-size: 1.6rem;
 }
 .up-to-pages {
-    position: relative;
-    margin-right: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 5rem;
     height: 5rem;
     background-color: rgba(255,255,255,1);
     color: rgba(196, 196, 196, 1);
     border-radius: 100%;
-    img {
-        display: inline-block;
-        position: relative;
-    }
+    
+    position: relative;
+    left: 100%;
     }
 .up-to-pages:hover {
     color: rgba(118, 118, 118, 1);
@@ -325,5 +339,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
 }
