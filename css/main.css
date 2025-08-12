@@ -53,6 +53,9 @@ body::before {
     align-items: center;
     
 }
+#mobile-nav {
+    display: none;
+}
 .navs {
     display: flex;
     flex-direction: row;
@@ -96,7 +99,6 @@ body::before {
 .sec1-right {
     max-width: 50%;
     box-sizing: border-box;
-    overflow-wrap: break-word;
 }
 .sec1-left h3 {
     margin-top: 20rem;
@@ -226,7 +228,8 @@ body::before {
     margin-bottom: 24.6rem;
     background-color:rgba(38, 49, 64, 1);
     width: 100%;
-    height: 20rem;
+    height: auto;
+    padding: 5rem 5.8rem;
     border-radius: 3rem;
 
     display: flex;
@@ -235,7 +238,6 @@ body::before {
     align-items: center;
 }
 .sub-text {
-    margin-left: 5.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,7 +254,7 @@ body::before {
 }
 .sub-form {
     margin-right: 5.8rem;
-    width: 53rem;
+    width: auto;
     height: 6rem;
     background-color: rgba(255,255,255,1);
     border-radius: 6rem;
@@ -268,6 +270,19 @@ body::before {
     vertical-align: middle;
     margin-left: 2.8rem;
 }
+
+.sub-form input {
+    margin-left: 1.8rem;
+    font-size: 1.6rem;
+    border: none;
+    vertical-align: middle;
+    
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+.sub-form input::placeholder {
+    color: rgba(118, 118, 118, 1);
+    font-size: 1.6rem;
+}
 .sub-form button {
     width: 13.6rem;
     height: 5rem;
@@ -280,18 +295,6 @@ body::before {
     font-size: 1.6rem;
     text-align: center;
     
-}
-.sub-form input {
-    margin-left: 1.8rem;
-    font-size: 1.6rem;
-    border: none;
-    vertical-align: middle;
-    
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-}
-.sub-form input::placeholder {
-    color: rgba(118, 118, 118, 1);
-    font-size: 1.6rem;
 }
 /*  아랫부분 배경화면 */
 main {
@@ -422,10 +425,231 @@ main::after {
         object-fit: cover;
         object-position: center;
     }
+.menu-group {
+    display: none;
+}
 
 /* !!!!왁자지껄!!! !!!!이목집중!!!! 여기가!!! */
 /* 모바일 반응형 시작부분 */
 @media screen and (max-width: 620px) {
-    
+/* 백그라운드 컬러 조정 */
+    body::before {
+        height: 79.4rem;
+}
+/* 가운데 정렬해놓으니 헷갈려서 초기화함 */
+.header, .main, .footer {
+    width: initial;
+    margin: initial;
+}
 
+/* 헤더 */
+.header {
+    height: 7.6rem;
+    margin: 2rem 2.4rem
+}
+#mobile-nav {
+    display: block;
+}
+.navs {
+    display: none;
+}
+
+/* 메인 */
+.main {
+    margin: 0 3.2rem;
+}
+/* sec1 메인페이지 */
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.sec1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.sec1-left h3 {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.sec1-left .sec1-left-cont {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+.sec1-left button {
+    text-align: center;
+    vertical-align: middle;
+}
+.sec1-right img {
+    margin-top: 0;
+}
+
+/* 메인 섹션2 */
+.img-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+    
+    text-align: center;
+    vertical-align: middle;
+}
+.hodu-main-img img {
+    aspect-ratio: 326 / 190;
+    border-radius: 1.8rem;
+}
+.img-head, .img-desc {
+    font-size: 2.4rem;
+    text-align: left;
+}
+.img-desc {
+    font-size: 1.4rem;
+}
+/* sec3 이미지3개 목록있는 부분 */
+.img-ul-page {
+    margin-top: 6rem;
+}
+/* 이미지의 헤드, 설명 */
+.ul-text1 {
+    gap: 3rem;
+}
+.ul-head {
+    font-size: 2.4rem;
+}
+.ul-desc {
+    font-size: 1.6rem;
+    line-height: 100%;
+}
+.imgs-3 {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+/* 스크롤바 속성을 모름ㅜㅜ */
+.ul-text2 {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.ul-text2 .button {
+    font-size: 1.4rem;
+    padding: auto;
+
+    transform: translate(100%);
+}
+/*섹션4 구독 */
+.subscribe {
+    margin-top: 5rem;
+    margin-bottom: 17.3rem;
+    border-radius: 1.8rem;
+    padding: 3.6rem 3.2rem 3rem;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-head {
+    font-size: 2.4rem;
+}
+.sub-desc {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.sub-form {
+    margin-right: initial;
+    margin-top: 2rem;
+    width: initial;
+    height: initial;
+    background-color: initial;
+    border-radius: initial;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.sub-form label {
+    background-color: rgba(255,255,255,1);
+    width: auto;
+    height: 4rem;
+    background-color: rgba(255,255,255,1);
+    border-radius: 6rem;
+}
+.sub-form img, input {
+    vertical-align: middle;
+    text-align: center;
+}
+.sub-form input {
+    margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+.sub-form::placeholder {
+    font-size: 1.2rem;
+}
+/* 아랫부분 배경화면 */
+main::after {
+    height: 24.1rem;
+    bottom: -17.3rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer {
+    height: 17.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5.8rem;
+}
+.footer-logo img {
+    width: 11.2rem;
+    height: 3.4rem;
+}
+.sns{
+    gap: 1.6rem;
+}
+.sns li {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+/* 모바일에서만 보이는 푸터 */
+.menu-group {
+    display: flex;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 2.8rem;
+}
+.footer-menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.6rem;
+    align-items: center;
+}
+.footer-menu li {
+    font-size: 1.4rem;
+    text-align: end;
+    color: rgba(118, 118, 118,1);
+}
 }
