@@ -1,10 +1,10 @@
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 
 html {
-  font-family: 'Spoqa Han Sans', 'Sans-serif';
-  box-sizing: border-box;
-  font-size: 62.5%;
-  font-weight: 400;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-weight: 400;
 }
 /* 백그라운드 컬러 적용 */
 body { position: relative; }
@@ -13,7 +13,7 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 90rem;
     background: rgba(242,233,216,1);
     z-index: -100;
@@ -22,11 +22,6 @@ body::before {
 .header, .main, .footer {
     width: 66.666vw;
     margin: 0 16.666vw;
-}
-/* 메인태그 복잡해서 전체 플랙스 적용  */
-.main {
-    display: flex;
-    flex-direction: column;
 }
 
 .a11y-hidden {
@@ -49,7 +44,7 @@ body::before {
     z-index: 100;
     background-color: rgba(242, 233, 216, 1);
 }
-
+/* 헤더 시작 */
 .header {
     height: 10.2rem;
     display: flex;
@@ -58,7 +53,6 @@ body::before {
     align-items: center;
     
 }
-
 .navs {
     display: flex;
     flex-direction: row;
@@ -85,6 +79,7 @@ body::before {
     font-weight: 700;
     color: rgba(255,255,255,1);
     text-align: center;
+    vertical-align: middle;
 }
 
 /* main시작 */
@@ -103,21 +98,23 @@ body::before {
     box-sizing: border-box;
     overflow-wrap: break-word;
 }
-.sec1-left h2 {
+.sec1-left h3 {
     margin-top: 20rem;
-    max-width: 100%;
-    height: 12rem;
 
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 100%;
+    vertical-align: middle;
 }
-.sec1-left div {
+.sec1-left .sec1-left-cont {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 1.6rem;
+    line-height: 100%;
 }
 .sec1-left button {
     text-align: center;
+    vertical-align: middle;
     line-height: 5rem;
 }
 /* fb: 가독성을 위한 이미지 크기 %로 변경 */
@@ -128,33 +125,25 @@ body::before {
     object-position: top;
     margin-top: 3.2rem;
 }
-/* sec2 이미지-텍스트 배열 */
+
+/* 섹션2- 이미지-텍스트 배열 */
 .img-page {
     margin-top: 8rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-}
-.hodu-main-img {
-    width: 66rem;
-    height: 39rem;
+    gap: 11rem;
 }
 .hodu-main-img img {
-    width: 66rem;
-    height: 39rem;
-    height: 39rem;
+    width: 100%;
+    aspect-ratio: 660 / 390;
     border-radius: 3rem;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
 
     object-fit: cover;
     object-position: center;
 }
-.hodu-desc {
-    padding-left: 11rem;
-}
 .img-head {
-    width: 51rem;
-    height: 13.5rem;
     font-size: 3.6rem;
     font-weight: 700;
 }
@@ -162,20 +151,27 @@ body::before {
     padding-top: 4rem;
     font-size: 1.6rem;
 }
-/* sec3 이미지 3개 배열 */
+
+/* 섹션3-이미지 3개 배열 */
+/* 일단 헤드글씨와 이미지, 설명을 세로배열 */
 .img-ul-page {
     margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
 }
+/* 이미지의 헤드, 설명 */
 .ul-text1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
 }
 .ul-head {
     color: rgba(217, 118, 82, 1);
     font-size: 4.8rem;
     font-weight: 700;
+    text-align: center;
 }
 .ul-desc {
     text-align: center;
@@ -185,24 +181,23 @@ body::before {
         color: rgba(217, 118, 82, 1);
         font-weight: 700;
     }
+/* 이미지 3분할 */
 .ul-img {
     margin-top: 8.8rem;
 }
 .imgs-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 7.2rem;
 }
 .imgs-3 img {
-    width: 37.8rem;
-    height: 37.8rem;
+    width: 100%;
     border-radius: 3rem;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
 }
+/* 이미지 하단 설명, 버튼 */
 .ul-text2 {
     margin-top: 9rem;
-    width: 93.8rem;
 
     display: flex;
     flex-direction: row;
@@ -210,26 +205,25 @@ body::before {
     align-items: center;
 }
 .learn-desc {
-    margin-left: 17.2rem;
     font-size: 1.6rem;
 }
 .ul-text2 .button {
-    width: 14.7rem;
-    height: 5rem;
+    padding: 1.5rem 2.9rem;
     border-radius: 4rem;
     background-color: rgba(217, 118, 82, 1);
 
     font-size: 1.6rem;
+    font-weight: 700;
     color: rgba(255,255,255,1);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
     text-align: center;
 }
-/* sec4 구독 */
+
+/* 섹션4 구독 */
 .subscribe {
     margin-top: 9rem;
+    margin-bottom: 24.6rem;
     background-color:rgba(38, 49, 64, 1);
     width: 100%;
     height: 20rem;
@@ -299,10 +293,33 @@ body::before {
     color: rgba(118, 118, 118, 1);
     font-size: 1.6rem;
 }
+/*  아랫부분 배경화면 */
+main {
+    position: relative;
+    z-index: 0;
+}
+main::after {
+    content: "";
+    background-image:
+    linear-gradient(rgba(242,233,216,0.6), rgba(242,233,216,0.6)),
+    url(../images/img_5.jpg);
+    background-position: center, 50% 30%;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 34rem;
+    z-index: -10;
 
+    position: absolute;
+    left: 50%;
+    bottom: -24.6rem;
+    transform: translate(-50%);
+}
 /* 모달창 */
 .modal {
-    /* display: hidden; */
+    display: none;
+}
+.modal .modal-div{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -315,8 +332,7 @@ body::before {
     border: none;
     border-radius: 3rem;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-}
-.modal .modal-div {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,21 +371,24 @@ body::before {
 }
 
 /* 위로가기 버튼 */
-.up-to-pages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.up-to-pages{
+    position: fixed;
+    right: 2.4rem;
+    bottom: 2.4rem;
+    z-index: 1000;
+}
+.up{
+    display: grid;
+    place-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: rgba(255,255,255,1);
-    color: rgba(196, 196, 196, 1);
-    border-radius: 100%;
-    
-    position: relative;
-    left: 100%;
-    }
-.up-to-pages:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(196,196,196,1);
+
+    border: 1px solid rgba(196,196,196,1); 
+    border-radius: 50%; 
+}
+.up img:hover{
     color: rgba(118, 118, 118, 1);
 }
 /* footer */
@@ -406,7 +425,7 @@ body::before {
 
 /* !!!!왁자지껄!!! !!!!이목집중!!!! 여기가!!! */
 /* 모바일 반응형 시작부분 */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 620px) {
     
-    
+
 }
