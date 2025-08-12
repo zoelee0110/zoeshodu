@@ -1,5 +1,6 @@
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 
+*, *::before, *::after{ box-sizing:inherit; }
 html {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     box-sizing: border-box;
@@ -547,7 +548,7 @@ main::after {
     font-size: 1.4rem;
     padding: auto;
 
-    transform: translate(100%);
+    margin-left: auto;
 }
 /*섹션4 구독 */
 .subscribe {
@@ -569,35 +570,41 @@ main::after {
 .sub-form {
     margin-right: initial;
     margin-top: 2rem;
-    width: initial;
+    width: 100%;
     height: initial;
     background-color: initial;
     border-radius: initial;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 .sub-form label {
     background-color: rgba(255,255,255,1);
     width: auto;
     height: 4rem;
-    background-color: rgba(255,255,255,1);
     border-radius: 6rem;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
-.sub-form img, input {
+.sub-form img, .sub-form input {
     vertical-align: middle;
-    text-align: center;
 }
 .sub-form input {
     margin-left: 1.4rem;
     font-size: 1.2rem;
+    width: 80%;
 }
 .sub-form::placeholder {
     font-size: 1.2rem;
+    width: 100%;
 }
+.sub-form button {
+    margin-left: auto;
+}
+
 /* 아랫부분 배경화면 */
 main::after {
     height: 24.1rem;
