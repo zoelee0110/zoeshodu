@@ -530,15 +530,21 @@ main::after {
     font-size: 1.6rem;
     line-height: 100%;
 }
+/* FB 이미지 슬라이더 적용 */
+.ul-img {
+    overflow-x: scroll;
+    white-space: nowrap; 
+}
 .imgs-3 {
     gap: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
 }
-/* 스크롤바 속성을 모름ㅜㅜ */
+.imgs-3 img {
+    display: block;
+    width: 26rem;
+    height: 26rem;
+}
+    
 .ul-text2 {
     margin-top: 6rem;
     display: flex;
@@ -594,7 +600,7 @@ main::after {
 .sub-form input {
     margin-left: 1.4rem;
     font-size: 1.2rem;
-    width: 80%;
+    width: 70%;
 }
 .sub-form::placeholder {
     font-size: 1.2rem;

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HODU랜딩페이지</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -10,8 +10,10 @@
   <body>
     <header class="container fixed">
     <div class="header">
-        <h1 class="a11y-hidden">HODU</h1>
-        <div><img src="./images/logo.svg" alt="호두"></div>
+        <!-- FB반영 헤드 내부 이미지 넣기 -->
+        <h1 class="head-logo">
+        <img src="./images/logo.svg" alt="호두 로고">
+        </h1>
         <button id="mobile-nav">
             <img src="./images/menu.svg" alt="네비게이션 바 열기">
         </button>
@@ -26,75 +28,71 @@
     </div>
     </header>
     <main class="container">
-        <div class="main">
-            <section class="main-page">
-                <h2 class="a11y-hidden">호두 메인</h2>
-                <div class="sec1-left">
-                    <h3>Lorem Ipsum is simply</br>dummy text of the printing and</h2>
-                    <div class="sec1-left-cont">
-                        Lorem Ipsum is simply dummy text of the printing and</br>
-                        typesetting industry. </br>
-                        Lorem Ipsum has been the industry's standard dummy text</br>
-                        ever since the 1500s, when an unknown</br>
-                    </div>
-                    <div class="download"><button type="button">Download</button></div>
+    <div class="main">
+        <section class="main-page">
+            <h2 class="a11y-hidden">호두 메인</h2>
+            <div class="sec1-left">
+                <h3>Lorem Ipsum is simply<br/>dummy text of the printing and</h3>
+                <div class="sec1-left-cont">
+                    Lorem Ipsum is simply dummy text of the printing and<br/>
+                    typesetting industry. <br/>
+                    Lorem Ipsum has been the industry's standard dummy text<br/>
+                    ever since the 1500s, when an unknown<br/>
                 </div>
-                <div class="sec1-right">
-                    <img src="./images/box-cat.png" alt="박스를 쓴 고양이 호두">
+                <div class="download"><button type="button">Download</button></div>
+            </div>
+            <img class="sec1-right" src="./images/box-cat.png" alt="박스를 쓴 고양이 호두">
+        </section>
+        <section class="img-page">
+            <h2 class="a11y-hidden">호두 이미지와 대표설명</h2>
+            <div class="hodu-main-img">
+                <img class="hodu-main-img" src="./images/img_4.jpg" alt="누워있는 고양이 호두">
+            </div>
+            <div class="hodu-desc">
+                <h3 class="img-head">Lorem Ipsum is simply
+                dummy text of the printing and dummy text</h3>
+                <p class="img-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+        </section>
+        <section class="img-ul-page">
+            <h2 class="a11y-hidden">호두에 대한 설명과 3가지 상황</h2>
+            <div class="ul-text1">
+                <h3 class="ul-head">dummy text of the printing and dummy</h3>
+                <p class="ul-desc">Lorem Ipsum is simply <span class="coloring">dummy text</span> of the printing and typesetting industry. <br/>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            </div>
+            <div class="ul-img">
+                <ul class="imgs-3">
+                    <li><img src="./images/img_1.jpg" alt="캣타워 위의 고양이 호두"></li>
+                    <li><img src="./images/img_2.jpg" alt="고양이 호두의 뒷모습"></li>
+                    <li><img src="./images/img_3.jpg" alt="고양이 호두의 정면 모습"></li>
+                </ul>
+            </div>
+            <div class="ul-text2">
+                <div class="learn-desc">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br/>
+                    Ipsum is simply dummy text of the printing and typesetting industry. 
                 </div>
-            </section>
-            <section class="img-page">
-                <h2 class="a11y-hidden">호두 이미지와 대표설명</h2>
-                <div class="hodu-main-img">
-                    <img src="./images/img_4.jpg" alt="누워있는 고양이 호두">
-                </div>
-                <div class="hodu-desc">
-                    <h3 class="img-head">Lorem Ipsum is simply
-                    dummy text of the printing and dummy text</h3>
-                    <p class="img-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-            </section>
-            <section class="img-ul-page">
-                <h2 class="a11y-hidden">호두에 대한 설명과 3가지 상황</h2>
-                <div class="ul-text1">
-                    <h3 class="ul-head">dummy text of the printing and dummy</h3>
-                    <p class="ul-desc">Lorem Ipsum is simply <span class="coloring">dummy text</span> of the printing and typesetting industry. </br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-                </div>
-                <div class="ul-img">
-                    <ul class="imgs-3">
-                        <li><img src="./images/img_1.jpg" alt="캣타워 위의 고양이 호두"></li>
-                        <li><img src="./images/img_2.jpg" alt="고양이 호두의 뒷모습"></li>
-                        <li><img src="./images/img_3.jpg" alt="고양이 호두의 정면 모습"></li>
-                    </ul>
-                </div>
-                <div class="ul-text2">
-                    <div class="learn-desc">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</br>
-                        Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </div>
-                    <div class="button">
-                        <button type="button">Learn More</button>
-                    </div>
-                </div>
-            </section>
-            <section class="subscribe">
-                <h2 class="a11y-hidden">구독하기</h2>
-                <div class="sub-text">
-                    <h3 class="sub-head">Subscribe to our Blog post</h3>
-                    <div class="sub-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
-                    Lorem Ipsum has been the industry's standard dummy text </div>
-                </div>
-                <form class="sub-form">
-                    <label for="subscribe">
-                        <img src="./images/mail.svg" alt="이메일 로고">
-                        <input id="subscribe" type="email" placeholder="Enter your e-mail address">
-                    </label>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
-        </div>
+                <button class="button" type="button">Learn More</button>
+            </div>
+        </section>
+        <section class="subscribe">
+            <h2 class="a11y-hidden">구독하기</h2>
+            <div class="sub-text">
+                <h3 class="sub-head">Subscribe to our Blog post</h3>
+                <div class="sub-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                Lorem Ipsum has been the industry's standard dummy text </div>
+            </div>
+            <form class="sub-form">
+                <label for="subscribe">
+                    <img src="./images/mail.svg" alt="이메일 로고">
+                    <input id="subscribe" type="email" placeholder="Enter your e-mail address">
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
     <section class="modal">
         <h2 class="a11y-hidden">구독에 감사합니다</h2>
         <div class="modal-div">
