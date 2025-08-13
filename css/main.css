@@ -54,7 +54,7 @@ body::before {
     align-items: center;
     
 }
-#mobile-nav {
+#mobile-nav, #mobile-nav-ul {
     display: none;
 }
 .navs {
